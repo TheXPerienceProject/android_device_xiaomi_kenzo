@@ -196,7 +196,7 @@ TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_INCLUDE_CRYPTO := true
 TW_THEME := portrait_hdpi
-BOARD_CUSTOM_BOOTIMG_MK := device/xiaomi/kenzo/mkbootimg.mk
+#BOARD_CUSTOM_BOOTIMG_MK := device/xiaomi/kenzo/mkbootimg.mk
 
 # RIL
 TARGET_RIL_VARIANT := caf
