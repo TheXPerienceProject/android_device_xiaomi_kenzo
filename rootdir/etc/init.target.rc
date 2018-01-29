@@ -46,6 +46,8 @@ service gx_fpd /system/bin/gx_fpd
 
 on property:persist.sys.fp.goodix=0
     stop gx_fpd
+    start fps_hal
 
 on property:persist.sys.fp.goodix=1
     start gx_fpd
+    start fps_hal
