@@ -28,7 +28,6 @@
 #
 
 on init
-    export LD_SHIM_LIBS "/system/vendor/lib64/lib-imsvt.so|libshims_ims.so"
 
 on post-fs data
     mkdir /data/goodix 0700 system system
@@ -36,6 +35,7 @@ on post-fs data
 on boot
     chown system system  /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
+    start fps_hal
 
 service gx_fpd /system/bin/gx_fpd
     class late_start
